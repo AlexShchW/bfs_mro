@@ -28,4 +28,4 @@ jobs:
 
     - name: Check coverage (optional)
       run: |
-        pytest --cov=bfs_mro --cov-report=xml
+        pytest --cov=bfs_mro --cov-report=xml --cov-report=term
