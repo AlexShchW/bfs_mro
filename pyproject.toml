@@ -7,11 +7,10 @@ name = "bfs_mro"
 version = "0.1.0"
 description = "BFS-enhanced method lookup for Python classes"
 readme = "README.md"
-license = {text = "MIT"}
+license = {file = "LICENSE"}
 authors = [{name = "Alexander Shchukin", email = "446.54.53@gmail.com"}]
 classifiers = [
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
 requires-python = ">=3.9"
