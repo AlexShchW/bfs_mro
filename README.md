@@ -44,6 +44,7 @@ with BFSMRO(wizard) as wizard:
     print(wizard.heal())  # -> "A Wizard heals"
 ```
 ⚠️ Name Shadowing in Functions
+
 Due to Python’s scoping rules, you cannot use the same name in the with ... as target if it’s also used in the expression, when inside a function:
 ```python
 def bad():
@@ -51,6 +52,7 @@ def bad():
         Wizard.cast_light()
 ```
 ✅ Workaround
+
 Use a temporary name for the class or instance:
 ```python
 _Wizard = Wizard
