@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=61.0", "wheel"]
+requires = ["setuptools>=77.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -7,14 +7,11 @@ name = "bfs_mro"
 version = "0.1.0"
 description = "BFS-enhanced method lookup for Python classes"
 readme = "README.md"
-license = {file = "LICENSE"}
+license = "MIT"
 authors = [{name = "Alexander Shchukin", email = "446.54.53@gmail.com"}]
-classifiers = [
-    "Programming Language :: Python :: 3",
-    "Operating System :: OS Independent",
-]
 requires-python = ">=3.9"
 dependencies = []
+license-files = ["LICENSE"]
 
 [project.optional-dependencies]
 dev = ["pytest", "pytest-cov"]
