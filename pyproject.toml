@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "bfs_mro"
-version = "0.1.0"
+version = "0.1.1"
 description = "BFS-enhanced method lookup for Python classes"
 readme = "README.md"
 license = "MIT"
