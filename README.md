@@ -31,6 +31,8 @@ Python's standard MRO only searches upward in the inheritance tree. BFSMRO adds 
 This enables novel patterns like:
 
 ```python
+from bfs_mro import BFSMRO
+
 # Framework core remains unchanged
 class Core: pass
 
@@ -42,7 +44,7 @@ class PluginB(Core):
     def feature_b(self):
         return f"Feature B from plugin, used by {self.__class__.__name__}"
 
-# Core can now access plugin features without knowing about them
+# Core can now access plugin features
 with BFSMRO(Core()) as enhanced:
     print(enhanced.feature_a())  # → "Feature A from plugin, used by Core"
     print(enhanced.feature_b())  # → "Feature B from plugin, used by Core"
