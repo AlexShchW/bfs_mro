@@ -1,9 +1,12 @@
 # BFSMRO
 
+[![GitHub](https://img.shields.io/badge/GitHub-bfs_mro-blue)](https://github.com/AlexShchW/bfs_mro)
+[![PyPI](https://img.shields.io/pypi/v/bfs-mro)](https://pypi.org/project/bfs-mro)
+
 > ⚠️ **Note**: This is a **pet project** for practicing advanced Python concepts like metaprogramming, context managers, and dynamic method resolution.  
 > It is not intended for production use. Features like `__slots__`, `property`, and full descriptor support are not implemented.
 
-BFS-enhanced method lookup for Python classes and instances.
+Context manager that extends MRO with BFS lookup in subclasses.
 
 This context manager allows a class or instance to access `@classmethod`, `@staticmethod`, and instance methods from its subclasses — even if they’re not in the MRO.
 
@@ -160,5 +163,11 @@ pip install -e .[dev]
 pytest
 ```
 
-📄 License
+## 📄 License
+
 MIT — see LICENSE file.
+
+## 🌐 Links
+
+- **Source Code**: [GitHub](https://github.com/AlexShchW/bfs_mro)
+- **Package**: [PyPI](https://pypi.org/project/bfs-mro)
